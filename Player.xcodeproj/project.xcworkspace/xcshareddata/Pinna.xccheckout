@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9F63E12E-0998-45ED-9D4D-BC0CB7C1D87A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pinna</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>179DE728-35D3-4C25-8502-EE7D28F98C26</key>
+		<string>ssh://pinna.beanstalkapp.com//pinna.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pinna.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>179DE728-35D3-4C25-8502-EE7D28F98C26</key>
+		<string>../..</string>
+		<key>8C352AEC-D417-485C-91D5-EA9FA9E4D490</key>
+		<string>../../../TagLib</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://pinna.beanstalkapp.com//pinna.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>179DE728-35D3-4C25-8502-EE7D28F98C26</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C352AEC-D417-485C-91D5-EA9FA9E4D490</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TagLib</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>179DE728-35D3-4C25-8502-EE7D28F98C26</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pinna</string>
+		</dict>
+	</array>
+</dict>
+</plist>

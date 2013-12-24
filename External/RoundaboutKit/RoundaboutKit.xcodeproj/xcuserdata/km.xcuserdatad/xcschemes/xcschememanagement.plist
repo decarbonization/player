@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>RoundaboutKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>RoundaboutKitMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RoundaboutKitMacTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8B75839717920E7200D45F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7583A717920E7200D45F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7583ED1792100D00D45F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7583FE1792100D00D45F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B75842F179210F300D45F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BE806F51792189300DFEC35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BE807051792189300DFEC35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

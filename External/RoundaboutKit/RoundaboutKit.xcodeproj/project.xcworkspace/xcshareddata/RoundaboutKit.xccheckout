@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84753A62-A5F8-476B-BD1C-685F9FF99738</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RoundaboutKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5AA99680-D348-4CF8-BC6E-2436755D3873</key>
+		<string>ssh://github.com/decarbonization/RoundaboutKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RoundaboutKit.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5AA99680-D348-4CF8-BC6E-2436755D3873</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/decarbonization/RoundaboutKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5AA99680-D348-4CF8-BC6E-2436755D3873</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5AA99680-D348-4CF8-BC6E-2436755D3873</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RoundaboutKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

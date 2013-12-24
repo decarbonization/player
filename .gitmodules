@@ -1,0 +1,3 @@
+[submodule "External/RoundaboutKit"]
+	path = External/RoundaboutKit
+	url = git@github.com:decarbonization/RoundaboutKit.git

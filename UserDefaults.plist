@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ListenToMediaKeys</key>
+	<true/>
+	<key>FirstLaunchCompleted</key>
+	<false/>
+	<key>Effects_activePreset</key>
+	<string>0</string>
+	<key>Effects_presets</key>
+	<array/>
+	<key>Effects_selectedMode</key>
+	<integer>0</integer>
+	<key>AudioPlayer_numberOfRecentlyPlayedSongs</key>
+	<integer>-1</integer>
+	<key>AudioPlayer_volume</key>
+	<integer>1</integer>
+	<key>AudioPlayer_shouldPauseWhenHeadphonesAreUnplugged</key>
+	<true/>
+	<key>AudioPlayer_shuffleModeActive</key>
+	<false/>
+	<key>AudioPlayer_shouldMaintainPlayAndSkipInfo</key>
+	<true/>
+	<key>AudioPlayer_autoSubstituteBadSources</key>
+	<true/>
+	<key>ScrobblePlayedSongsAndUpdateNowPlaying</key>
+	<true/>
+	<key>LastFM_cachedUserInfo</key>
+	<dict/>
+	<key>LastFM_cachedUserInfo_Deployment</key>
+	<dict/>
+	<key>MainWindow_browserMode</key>
+	<integer>0</integer>
+	<key>ShowSongChangeNotifications</key>
+	<true/>
+	<key>MainWindow_shouldShowBackgroundMode</key>
+	<true/>
+	<key>MainWindow_artModeSquareSize</key>
+	<integer>250</integer>
+	<key>MainWindow_artModeWindowLevel</key>
+	<integer>0</integer>
+	<key>MainWindow_scrubbingBarUseTimeRemainingDisplayStyle</key>
+	<false/>
+	<key>MainWindow_automaticallyShowVideoWindow</key>
+	<true/>
+</dict>
+</plist>

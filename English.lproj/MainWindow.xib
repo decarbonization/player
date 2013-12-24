@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindow">
+            <connections>
+                <outlet property="oBrowserSearchField" destination="313" id="333"/>
+                <outlet property="oLibraryBackButton" destination="90" id="454"/>
+                <outlet property="oLibraryBrowser" destination="656" id="658"/>
+                <outlet property="oLibraryHeaderLabel" destination="645" id="646"/>
+                <outlet property="oLibraryModeChooser" destination="303" id="644"/>
+                <outlet property="oMainWindowSplitView" destination="3" id="541"/>
+                <outlet property="oPlayQueueArrayController" destination="50" id="335"/>
+                <outlet property="oPlayQueueClearButton" destination="1069" id="1073"/>
+                <outlet property="oPlayQueueContainerView" destination="1024" id="1074"/>
+                <outlet property="oPlayQueueHeaderLabel" destination="1013" id="1022"/>
+                <outlet property="oPlayQueueTableView" destination="42" id="334"/>
+                <outlet property="oShuffleHeaderView" destination="882" id="1058"/>
+                <outlet property="oShuffleModeNowPlayingContainer" destination="856" id="885"/>
+                <outlet property="oShuffleModeWindow" destination="846" id="884"/>
+                <outlet property="oTitleBarButtons" destination="296" id="452"/>
+                <outlet property="oTopChromeView" destination="615" id="629"/>
+                <outlet property="oVideoHostView" destination="950" id="953"/>
+                <outlet property="oVideoWindow" destination="947" id="954"/>
+                <outlet property="window" destination="1" id="49"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Pinna" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" frameAutosaveName="Main Window" animationBehavior="default" id="1" userLabel="Main Window" customClass="RKBorderlessWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="432" y="327" width="600" height="425"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="600" height="425"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="425"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="line" titlePosition="noTitle" id="628" userLabel="White Background Fill">
+                        <rect key="frame" x="0.0" y="45" width="600" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </box>
+                    <customView id="615" customClass="RKChromeView">
+                        <rect key="frame" x="0.0" y="395" width="600" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="foregroundGradient" value="(193, 193, 193, 0.85); (232, 232, 232, 0.99)"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundGradient" value="(240, 240, 240, 0.89); (252, 252, 252, 0.99)"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="image" value="WindowTexture"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTileImage" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDrawImageAboveGradient" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="626"/>
+                        </connections>
+                    </customView>
+                    <customView id="569" customClass="RKChromeView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTopEtched" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDrawImageAboveGradient" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTileImage" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="image" value="BottomWindowTexture"/>
+                        </userDefinedRuntimeAttributes>
+                    </customView>
+                    <splitView dividerStyle="thin" vertical="YES" id="3" userLabel="Split View" customClass="MainWindowSplitView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="425"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView id="4" userLabel="Left Split View Pane">
+                                <rect key="frame" x="0.0" y="0.0" width="337" height="425"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <customView id="656" userLabel="Library Browser" customClass="RKBrowserView">
+                                        <rect key="frame" x="0.0" y="45" width="337" height="316"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-2" id="665"/>
+                                        </connections>
+                                    </customView>
+                                    <customView id="645" customClass="HeaderLabelView">
+                                        <rect key="frame" x="0.0" y="398" width="337" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    </customView>
+                                    <customView id="378" customClass="RKChromeView">
+                                        <rect key="frame" x="0.0" y="361" width="337" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <searchField verticalHuggingPriority="750" id="313" customClass="BrowserSearchField">
+                                                <rect key="frame" x="7" y="6" width="323" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="314" customClass="BrowserSearchFieldCell">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </searchFieldCell>
+                                                <connections>
+                                                    <binding destination="-2" name="value" keyPath="searchString" id="669"/>
+                                                </connections>
+                                            </searchField>
+                                            <button id="90">
+                                                <rect key="frame" x="0.0" y="1" width="37" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="BackButton" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="91" customClass="SearchBarButtonCell">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" size="13" name="HiraKakuProN-W6"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="goBack:" target="656" id="664"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="foregroundGradient" value="(237, 237, 237, 1.0); (242, 242, 242, 1.0)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundGradient" value="(237, 237, 237, 1.0); (242, 242, 242, 1.0)"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasBottomLine" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                    <customView id="116" customClass="RKChromeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" id="303" customClass="BrowserModeMatrix">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                <size key="cellSize" width="67" height="45"/>
+                                                <buttonCell key="prototype" type="smallSquare" bezelStyle="smallSquare" image="Playlists" imagePosition="only" alignment="center" alternateImage="Playlists" imageScaling="proportionallyUpOrDown" inset="2" id="306">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <cells>
+                                                    <column>
+                                                        <buttonCell type="smallSquare" bezelStyle="smallSquare" image="Playlists" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="304" customClass="BottomBarButtonCell">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isLeftMostButton" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </buttonCell>
+                                                    </column>
+                                                    <column>
+                                                        <buttonCell type="smallSquare" bezelStyle="smallSquare" image="Artists" imagePosition="overlaps" alignment="center" tag="2" imageScaling="proportionallyDown" inset="2" id="307" customClass="BottomBarButtonCell">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </column>
+                                                    <column>
+                                                        <buttonCell type="smallSquare" bezelStyle="smallSquare" image="Albums" imagePosition="overlaps" alignment="center" tag="3" imageScaling="proportionallyDown" inset="2" id="308" customClass="BottomBarButtonCell">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </column>
+                                                    <column>
+                                                        <buttonCell type="smallSquare" bezelStyle="smallSquare" image="Songs" imagePosition="overlaps" alignment="center" tag="1" imageScaling="proportionallyDown" inset="2" id="309" customClass="BottomBarButtonCell">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                    </column>
+                                                    <column>
+                                                        <buttonCell type="smallSquare" bezelStyle="smallSquare" image="Explore" imagePosition="overlaps" alignment="center" tag="4" imageScaling="proportionallyDown" inset="2" id="818" customClass="BottomBarButtonCell">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRightMostButton" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </buttonCell>
+                                                    </column>
+                                                </cells>
+                                                <connections>
+                                                    <action selector="currentBrowserSelectionDidChange:" target="-2" id="643"/>
+                                                    <binding destination="300" name="hidden" keyPath="values.MainWindow_searchVisible" id="319"/>
+                                                </connections>
+                                            </matrix>
+                                            <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="190">
+                                                <rect key="frame" x="336" y="1" width="1" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                                <view key="contentView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </view>
+                                                <color key="borderColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                <color key="fillColor" white="1" alpha="0.11" colorSpace="calibratedWhite"/>
+                                            </box>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasTopLine" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasBottomLine" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTopEtched" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                    <customView id="296" customClass="RKTitleBarButtonsView">
+                                        <rect key="frame" x="8" y="402" width="56" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </customView>
+                                    <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="414">
+                                        <rect key="frame" x="336" y="371" width="1" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                        <view key="contentView">
+                                            <rect key="frame" x="0.0" y="0.0" width="1" height="53"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <color key="borderColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="fillColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                    </box>
+                                    <imageView id="683">
+                                        <rect key="frame" x="0.0" y="356" width="337" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <imageCell key="cell" continuous="YES" enabled="NO" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="SearchBarDivider" id="684"/>
+                                    </imageView>
+                                </subviews>
+                            </customView>
+                            <customView id="5" userLabel="Right Split View Pane">
+                                <rect key="frame" x="338" y="0.0" width="262" height="425"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <customView id="115" customClass="RKChromeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="189">
+                                                <rect key="frame" x="0.0" y="1" width="1" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                                <view key="contentView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </view>
+                                                <color key="borderColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                <color key="fillColor" white="1" alpha="0.11" colorSpace="calibratedWhite"/>
+                                            </box>
+                                            <customView id="491" customClass="RKChromeView">
+                                                <rect key="frame" x="251" y="3" width="8" height="9"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasTopLine" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasBottomLine" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="WindowRoundedResizeKnob"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </customView>
+                                            <button id="18">
+                                                <rect key="frame" x="59" y="2" width="55" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="PreviousTrack_Button" imagePosition="only" alignment="center" alternateImage="PreviousTrack_ButtonPressed" state="on" inset="2" id="23">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="previousTrack:" target="-2" id="55"/>
+                                                    <binding destination="-2" name="enabled" keyPath="player.canPreviousTrack" id="513"/>
+                                                </connections>
+                                            </button>
+                                            <button id="19">
+                                                <rect key="frame" x="148" y="2" width="55" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NextTrack_Button" imagePosition="only" alignment="center" alternateImage="NextTrack_ButtonPressed" state="on" inset="2" id="22">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="nextTrack:" target="-2" id="57"/>
+                                                    <binding destination="-2" name="enabled" keyPath="player.canNextTrack" id="514"/>
+                                                </connections>
+                                            </button>
+                                            <button toolTip="Turn on library shuffle. Hold down the shift key to shuffle the contents of the queue instead of turning on library shuffle." id="425">
+                                                <rect key="frame" x="222" y="5" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="ShuffleOff_Button" imagePosition="overlaps" alignment="center" alternateImage="ShuffleOff_ButtonPressed" state="on" inset="2" id="426">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="toggleShuffleMode:" target="-2" id="542"/>
+                                                </connections>
+                                            </button>
+                                            <button id="20">
+                                                <rect key="frame" x="109" y="1" width="44" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Play_Button" imagePosition="overlaps" alignment="center" alternateImage="Play_ButtonPressed" state="on" inset="2" id="21">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="playPause:" target="-2" id="56"/>
+                                                    <binding destination="-2" name="image" keyPath="playPauseButtonImage" previousBinding="88" id="89"/>
+                                                    <binding destination="-2" name="alternateImage" keyPath="playPauseButtonPressedImage" id="88"/>
+                                                    <binding destination="-2" name="enabled" keyPath="player.canPlayPause" id="515"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasTopLine" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasBottomLine" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTopEtched" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                    <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="413">
+                                        <rect key="frame" x="0.0" y="371" width="1" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <view key="contentView">
+                                            <rect key="frame" x="0.0" y="0.0" width="1" height="53"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <color key="borderColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="fillColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                    </box>
+                                    <customView id="712" userLabel="Now Playing Container">
+                                        <rect key="frame" x="0.0" y="45" width="262" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <customView id="1024">
+                                                <rect key="frame" x="0.0" y="0.0" width="262" height="350"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="25" horizontalPageScroll="10" verticalLineScroll="25" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="39" customClass="QueueTableScrollView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="262" height="350"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <clipView key="contentView" copiesOnScroll="NO" id="1Vt-EQ-hzv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="350"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" rowHeight="25" id="42" customClass="QueueTableView">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="262" height="350"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <size key="intercellSpacing" width="3" height="0.0"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <color key="gridColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <tableColumns>
+                                                                        <tableColumn identifier="information" width="259" minWidth="40" maxWidth="1000" id="44">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Text" id="70" customClass="RKBrowserIconTextFieldCell">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="50" name="displayPatternValue2" keyPath="arrangedObjects.artist" previousBinding="1036" id="1037">
+                                                                                    <dictionary key="options">
+                                                                                        <string key="NSNullPlaceholder">(Unknown)</string>
+                                                                                        <string key="NSDisplayPattern">%{value1}@   %{value2}@</string>
+                                                                                    </dictionary>
+                                                                                </binding>
+                                                                                <binding destination="50" name="displayPatternValue1" keyPath="arrangedObjects.name" id="1036">
+                                                                                    <dictionary key="options">
+                                                                                        <string key="NSNullPlaceholder">(Unknown)</string>
+                                                                                        <string key="NSDisplayPattern">%{value1}@   %{value2}@</string>
+                                                                                    </dictionary>
+                                                                                </binding>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                    </tableColumns>
+                                                                    <connections>
+                                                                        <outlet property="dataSource" destination="-2" id="71"/>
+                                                                        <outlet property="delegate" destination="-2" id="72"/>
+                                                                    </connections>
+                                                                </tableView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </clipView>
+                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" controlSize="small" horizontal="YES" id="41">
+                                                            <rect key="frame" x="-100" y="-100" width="238" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="40">
+                                                            <rect key="frame" x="247" y="0.0" width="15" height="325"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                    </scrollView>
+                                                </subviews>
+                                            </customView>
+                                        </subviews>
+                                    </customView>
+                                    <customView id="1013" customClass="HeaderLabelView">
+                                        <rect key="frame" x="0.0" y="401" width="262" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="string" value="Queue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <binding destination="-2" name="toolTip" keyPath="queueHeaderToolTip" id="1023"/>
+                                        </connections>
+                                    </customView>
+                                    <button verticalHuggingPriority="750" id="1069">
+                                        <rect key="frame" x="211" y="397" width="47" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Clear" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1070">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="smallSystem"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="clearPlayQueue:" target="-2" id="1072"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="361"/>
+                        </connections>
+                    </splitView>
+                </subviews>
+            </view>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isResizable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="delegate" destination="-2" id="323"/>
+                <outlet property="initialFirstResponder" destination="42" id="227"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="300"/>
+        <arrayController objectClassName="Song" editable="NO" selectsInsertedObjects="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" automaticallyRearrangesObjects="YES" id="50" userLabel="Play Queue Controller">
+            <declaredKeys>
+                <string>name</string>
+                <string>album</string>
+                <string>artist</string>
+                <string>namne</string>
+                <string>player.isPlaying</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="player.playQueue" id="1027"/>
+            </connections>
+        </arrayController>
+        <window title="Pinna" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="846" userLabel="Shuffle" customClass="RKBorderlessWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="131" y="159" width="262" height="425"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="847">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="425"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="852" customClass="RKChromeView">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button id="862">
+                                <rect key="frame" x="64" y="2" width="44" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="PreviousTrack_Button" imagePosition="only" alignment="center" alternateImage="PreviousTrack_ButtonPressed" state="on" inset="2" id="867">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="previousTrack:" target="-2" id="877"/>
+                                    <binding destination="-2" name="enabled" keyPath="player.canPreviousTrack" id="876"/>
+                                </connections>
+                            </button>
+                            <button id="863">
+                                <rect key="frame" x="154" y="2" width="44" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NextTrack_Button" imagePosition="only" alignment="center" alternateImage="NextTrack_ButtonPressed" state="on" inset="2" id="866">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextTrack:" target="-2" id="878"/>
+                                    <binding destination="-2" name="enabled" keyPath="player.canNextTrack" id="875"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Turn off library shuffle. Hold down the option key to finish playing the current song" id="861">
+                                <rect key="frame" x="222" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="ShuffleOn_Button" imagePosition="overlaps" alignment="center" alternateImage="ShuffleOn_ButtonPressed" state="on" inset="2" id="868">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleShuffleMode:" target="-2" id="879"/>
+                                </connections>
+                            </button>
+                            <button id="864">
+                                <rect key="frame" x="109" y="2" width="44" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Play_Button" imagePosition="only" alignment="center" alternateImage="Play_ButtonPressed" state="on" inset="2" id="865">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="playPause:" target="-2" id="880"/>
+                                    <binding destination="-2" name="image" keyPath="playPauseButtonImage" previousBinding="872" id="873"/>
+                                    <binding destination="-2" name="alternateImage" keyPath="playPauseButtonPressedImage" id="872"/>
+                                    <binding destination="-2" name="enabled" keyPath="player.canPlayPause" id="874"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTopEtched" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDrawImageAboveGradient" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTileImage" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="image" value="BottomWindowTexture"/>
+                        </userDefinedRuntimeAttributes>
+                    </customView>
+                    <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="856">
+                        <rect key="frame" x="0.0" y="45" width="262" height="353"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="262" height="353"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </box>
+                    <customView id="850" customClass="RKChromeView">
+                        <rect key="frame" x="0.0" y="395" width="262" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView id="882" customClass="HeaderLabelView">
+                                <rect key="frame" x="0.0" y="5" width="262" height="18"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="string" value="Shuffle"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView id="855" customClass="RKTitleBarButtonsView">
+                                <rect key="frame" x="8" y="7" width="56" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                        </subviews>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="foregroundGradient" value="(193, 193, 193, 0.85); (232, 232, 232, 0.99)"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundGradient" value="(240, 240, 240, 0.89); (252, 252, 252, 0.99)"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="image" value="WindowTexture"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTileImage" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDrawImageAboveGradient" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="851"/>
+                        </connections>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="890"/>
+            </connections>
+        </window>
+        <view toolTip="Trending Mode Collection Item View" id="905">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="908">
+                    <rect key="frame" x="0.0" y="0.0" width="204" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                </box>
+                <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="909">
+                    <rect key="frame" x="0.0" y="27" width="204" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.42999999999999999" colorSpace="calibratedWhite"/>
+                </box>
+                <imageView hidden="YES" id="910">
+                    <rect key="frame" x="0.0" y="0.0" width="204" height="28"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ExFMPopoverSelectionBackground" id="911"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" id="912">
+                    <rect key="frame" x="2" y="6" width="200" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Item" id="913" customClass="ShadowedTextFieldCell">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </view>
+        <window title="Video" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="947" userLabel="Video">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="553" y="440" width="400" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="300" height="281"/>
+            <view key="contentView" id="948">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box autoresizesSubviews="NO" borderWidth="0.0" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" id="949">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <customView id="950" customClass="RKChromeView">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button id="951">
+                                            <rect key="frame" x="0.0" y="10" width="400" height="282"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Play_Button" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="952">
+                                                <behavior key="behavior" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-2" name="hidden" keyPath="player.isPaused" id="957">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasTopLine" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasBottomLine" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </customView>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </box>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+    <resources>
+        <image name="Albums" width="32" height="34"/>
+        <image name="Artists" width="35" height="34"/>
+        <image name="BackButton" width="19" height="18"/>
+        <image name="ExFMPopoverSelectionBackground" width="156" height="28"/>
+        <image name="Explore" width="35" height="34"/>
+        <image name="NextTrack_Button" width="51" height="40"/>
+        <image name="NextTrack_ButtonPressed" width="51" height="40"/>
+        <image name="Play_Button" width="45" height="44"/>
+        <image name="Play_ButtonPressed" width="45" height="44"/>
+        <image name="Playlists" width="30" height="34"/>
+        <image name="PreviousTrack_Button" width="51" height="40"/>
+        <image name="PreviousTrack_ButtonPressed" width="51" height="40"/>
+        <image name="SearchBarDivider" width="117" height="5"/>
+        <image name="ShuffleOff_Button" width="35" height="35"/>
+        <image name="ShuffleOff_ButtonPressed" width="35" height="35"/>
+        <image name="ShuffleOn_Button" width="35" height="35"/>
+        <image name="ShuffleOn_ButtonPressed" width="35" height="35"/>
+        <image name="Songs" width="20" height="34"/>
+    </resources>
+</document>

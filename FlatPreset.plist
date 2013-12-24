@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delayData</key>
+	<dict>
+		<key>data</key>
+		<data>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABP4AAAAAAAAJCSAAAAAAAA0ZqYAA=</data>
+		<key>manufacturer</key>
+		<integer>1634758764</integer>
+		<key>name</key>
+		<string>Untitled</string>
+		<key>subtype</key>
+		<integer>1684368505</integer>
+		<key>type</key>
+		<integer>1635083896</integer>
+		<key>version</key>
+		<integer>0</integer>
+	</dict>
+	<key>equalizerData</key>
+	<dict>
+		<key>data</key>
+		<data>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAwAAAAAAAAAEAAAAAAAAAAUAAAAAAAAABgAAAAAAAAAHAAAAAAAAAAgAAAAAAAAACQAAAAAAAAAKAAAAAAAAAAsAAAAAAAAADAAAAAAAAAANAAAAAAAAAA4AAAAAAAAADwAAAAAAAAAQAAAAAAAAABEAAAAAAAAAEgAAAAAAAAATAAAAAAAAABQAAAAAAAAAFQAAAAAAAAAWAAAAAAAAABcAAAAAAAAAGAAAAAAAAAAZAAAAAAAAABoAAAAAAAAAGwAAAAAAAAAcAAAAAAAAAB0AAAAAAAAAHgAAAAAAACcQP4AAAA==</data>
+		<key>manufacturer</key>
+		<integer>1634758764</integer>
+		<key>name</key>
+		<string>Untitled</string>
+		<key>Num EQ Bands</key>
+		<integer>31</integer>
+		<key>subtype</key>
+		<integer>1735550321</integer>
+		<key>type</key>
+		<integer>1635083896</integer>
+		<key>version</key>
+		<integer>0</integer>
+	</dict>
+	<key>name</key>
+	<string>Flat</string>
+	<key>pitchData</key>
+	<dict>
+		<key>data</key>
+		<data>AAAAAAAAAAAAAAAZAAAAAAAAAAAAAAABAAAAAAAAAAJCyAAAAAAAA0JIAAAAAAAEQkgAAAAAAAVCcAAAAAAABkCAAAAAAAAHQAAAAAAAAAhAAAAAAAAACQAAAAAAAAAKP+AAAAAAAAs/kzMzAAAADD9AAAAAAAANP8AAAAAAAA4/gAAAAAAAD0JIAAAAAAAQPczMzQAAABFAoAAAAAAAEkCAAAAAAAATQSAAAAAAABRBIAAAAAAAFQAAAAAAAAAWP4AAAAAAABc/gAAAAAAAGD+AAAA=</data>
+		<key>manufacturer</key>
+		<integer>1634758764</integer>
+		<key>name</key>
+		<string>Universal</string>
+		<key>render-quality</key>
+		<integer>127</integer>
+		<key>subtype</key>
+		<integer>1953329268</integer>
+		<key>type</key>
+		<integer>1635083896</integer>
+		<key>version</key>
+		<integer>0</integer>
+	</dict>
+	<key>reverbData</key>
+	<dict>
+		<key>data</key>
+		<data>AAAAAAAAAAAAAAARAAAAAAAAAAAAAAABQgwAAAAAAAI8cZUDAAAAAz17fpEAAAAEPHSH/QAAAAU6gxJvAAAABj8nrhQAAAAHPy4UewAAAAg/FcKPAAAACT9AAAAAAAAKPyP3zwAAAAs+yoy9AAAADD+dfJoAAAANPszMzQAAAA5ESAAAAAAAD0BAAAAAAAAQAAAAAA==</data>
+		<key>manufacturer</key>
+		<integer>1634758764</integer>
+		<key>name</key>
+		<string>Medium Hall 3</string>
+		<key>render-quality</key>
+		<integer>127</integer>
+		<key>subtype</key>
+		<integer>1836213622</integer>
+		<key>type</key>
+		<integer>1635083896</integer>
+		<key>version</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>
