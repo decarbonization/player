@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B6B25D11698DA6D00EDAA8B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B25D01698DA6D00EDAA8B /* Cocoa.framework */; };
+		8B6B25DF1698DBD000EDAA8B /* NSString+SymlinksAndAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B25DC1698DBD000EDAA8B /* NSString+SymlinksAndAliases.m */; };
+		8B6B25E01698DBD000EDAA8B /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B25DE1698DBD000EDAA8B /* PFMoveApplication.m */; };
+		8B6B25E61698DC2500EDAA8B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6B25E51698DC2500EDAA8B /* Security.framework */; };
+		8BBE6F0F1466E6B20037D91E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE6F0D1466E6B20037D91E /* InfoPlist.strings */; };
+		8BBE6F111466E6B20037D91E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE6F101466E6B20037D91E /* main.m */; };
+		8BBE6F181466E6B20037D91E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE6F171466E6B20037D91E /* AppDelegate.m */; };
+		8BBE6F1B1466E6B30037D91E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE6F191466E6B30037D91E /* MainMenu.xib */; };
+		8BBE6F231466E6EA0037D91E /* MediaKeyEventTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE6F221466E6EA0037D91E /* MediaKeyEventTap.m */; };
+		8BBE6FDD147C07760037D91E /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE6FDC147C07760037D91E /* Icon.icns */; };
+		8BC91C45175412160035AD4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC91C44175412160035AD4E /* SystemConfiguration.framework */; };
+		8BC91C4C175415750035AD4E /* HeadsUpWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC91C4A175415740035AD4E /* HeadsUpWindowController.m */; };
+		8BC91C61175419440035AD4E /* Pinna.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC91C60175419440035AD4E /* Pinna.m */; };
+		8BC91C6E17541DF70035AD4E /* MavenProBold.otf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8BC91C6717541DD10035AD4E /* MavenProBold.otf */; };
+		8BC91C6F17541DF70035AD4E /* MavenProMedium.otf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8BC91C6817541DD10035AD4E /* MavenProMedium.otf */; };
+		8BC91C7017541DF70035AD4E /* MavenProRegular.otf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8BC91C6917541DD10035AD4E /* MavenProRegular.otf */; };
+		8BC91C7E1754271A0035AD4E /* ShuffleMode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC91C7A1754271A0035AD4E /* ShuffleMode@2x.png */; };
+		8BC91C7F1754271A0035AD4E /* ShuffleMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC91C7B1754271A0035AD4E /* ShuffleMode.png */; };
+		8BC91C801754271A0035AD4E /* PlayMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC91C7C1754271A0035AD4E /* PlayMode.png */; };
+		8BC91C811754271A0035AD4E /* PlayMode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC91C7D1754271A0035AD4E /* PlayMode@2x.png */; };
+		8BDCD057176A3391005C2F0E /* HeadsUpWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDCD056176A3391005C2F0E /* HeadsUpWindowController.xib */; };
+		8BDCD05A176A33FC005C2F0E /* BackgroundArtworkDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCD059176A33FC005C2F0E /* BackgroundArtworkDisplayView.m */; };
+		8BDE75FA186A49590069A285 /* RoundaboutKitMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDE75F5186A494C0069A285 /* RoundaboutKitMac.framework */; };
+		8BDE75FC186A496D0069A285 /* RoundaboutKitMac.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDE75F5186A494C0069A285 /* RoundaboutKitMac.framework */; };
+		8BDE762B186A4A210069A285 /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE760B186A4A210069A285 /* NSBezierPath+MCAdditions.m */; };
+		8BDE762F186A4A210069A285 /* RKBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE7613186A4A210069A285 /* RKBorderlessWindow.m */; };
+		8BDE7630186A4A210069A285 /* RKChromeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE7615186A4A210069A285 /* RKChromeView.m */; };
+		8BDE7631186A4A210069A285 /* RKKeyDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE7617186A4A210069A285 /* RKKeyDispatcher.m */; };
+		8BDE7640186A4AF70069A285 /* ShadowedTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE763F186A4AF70069A285 /* ShadowedTextFieldCell.m */; };
+		8BDE7643186A4AFF0069A285 /* EtchedTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE7642186A4AFF0069A285 /* EtchedTextFieldCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BDE75F2186A494C0069A285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B75839817920E7200D45F54;
+			remoteInfo = RoundaboutKit;
+		};
+		8BDE75F4186A494C0069A285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BE806F61792189300DFEC35;
+			remoteInfo = RoundaboutKitMac;
+		};
+		8BDE75F6186A494C0069A285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B758430179210F300D45F54;
+			remoteInfo = Tests;
+		};
+		8BDE75F8186A49530069A285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE806F51792189300DFEC35;
+			remoteInfo = RoundaboutKitMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BC91C6D17541DEE0035AD4E /* Copy Fonts */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				8BC91C6E17541DF70035AD4E /* MavenProBold.otf in Copy Fonts */,
+				8BC91C6F17541DF70035AD4E /* MavenProMedium.otf in Copy Fonts */,
+				8BC91C7017541DF70035AD4E /* MavenProRegular.otf in Copy Fonts */,
+			);
+			name = "Copy Fonts";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDE75FB186A49600069A285 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8BDE75FC186A496D0069A285 /* RoundaboutKitMac.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B6B25D01698DA6D00EDAA8B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		8B6B25DB1698DBD000EDAA8B /* NSString+SymlinksAndAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SymlinksAndAliases.h"; sourceTree = "<group>"; };
+		8B6B25DC1698DBD000EDAA8B /* NSString+SymlinksAndAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SymlinksAndAliases.m"; sourceTree = "<group>"; };
+		8B6B25DD1698DBD000EDAA8B /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		8B6B25DE1698DBD000EDAA8B /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+		8B6B25E51698DC2500EDAA8B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		8BBE6F001466E6B20037D91E /* PlayKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBE6F071466E6B20037D91E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8BBE6F081466E6B20037D91E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8BBE6F091466E6B20037D91E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BBE6F0C1466E6B20037D91E /* PlayKeys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlayKeys-Info.plist"; sourceTree = "<group>"; };
+		8BBE6F0E1466E6B20037D91E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BBE6F101466E6B20037D91E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BBE6F121466E6B20037D91E /* PlayKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayKeys-Prefix.pch"; sourceTree = "<group>"; };
+		8BBE6F161466E6B20037D91E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BBE6F171466E6B20037D91E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BBE6F1A1466E6B30037D91E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8BBE6F211466E6EA0037D91E /* MediaKeyEventTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaKeyEventTap.h; sourceTree = "<group>"; };
+		8BBE6F221466E6EA0037D91E /* MediaKeyEventTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaKeyEventTap.m; sourceTree = "<group>"; };
+		8BBE6FDC147C07760037D91E /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		8BC91C44175412160035AD4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BC91C49175415740035AD4E /* HeadsUpWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadsUpWindowController.h; sourceTree = "<group>"; };
+		8BC91C4A175415740035AD4E /* HeadsUpWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadsUpWindowController.m; sourceTree = "<group>"; };
+		8BC91C5F175419440035AD4E /* Pinna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinna.h; sourceTree = "<group>"; };
+		8BC91C60175419440035AD4E /* Pinna.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pinna.m; sourceTree = "<group>"; };
+		8BC91C6717541DD10035AD4E /* MavenProBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProBold.otf; sourceTree = "<group>"; };
+		8BC91C6817541DD10035AD4E /* MavenProMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProMedium.otf; sourceTree = "<group>"; };
+		8BC91C6917541DD10035AD4E /* MavenProRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProRegular.otf; sourceTree = "<group>"; };
+		8BC91C7A1754271A0035AD4E /* ShuffleMode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShuffleMode@2x.png"; sourceTree = "<group>"; };
+		8BC91C7B1754271A0035AD4E /* ShuffleMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShuffleMode.png; sourceTree = "<group>"; };
+		8BC91C7C1754271A0035AD4E /* PlayMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayMode.png; sourceTree = "<group>"; };
+		8BC91C7D1754271A0035AD4E /* PlayMode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayMode@2x.png"; sourceTree = "<group>"; };
+		8BDCD056176A3391005C2F0E /* HeadsUpWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadsUpWindowController.xib; sourceTree = "<group>"; };
+		8BDCD058176A33FC005C2F0E /* BackgroundArtworkDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundArtworkDisplayView.h; sourceTree = "<group>"; };
+		8BDCD059176A33FC005C2F0E /* BackgroundArtworkDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundArtworkDisplayView.m; sourceTree = "<group>"; };
+		8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RoundaboutKit.xcodeproj; path = ../External/RoundaboutKit/RoundaboutKit.xcodeproj; sourceTree = "<group>"; };
+		8BDE760A186A4A210069A285 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+MCAdditions.h"; path = "../../RoundaboutKitMac/NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
+		8BDE760B186A4A210069A285 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+MCAdditions.m"; path = "../../RoundaboutKitMac/NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
+		8BDE7612186A4A210069A285 /* RKBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKBorderlessWindow.h; path = ../../RoundaboutKitMac/RKBorderlessWindow.h; sourceTree = "<group>"; };
+		8BDE7613186A4A210069A285 /* RKBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKBorderlessWindow.m; path = ../../RoundaboutKitMac/RKBorderlessWindow.m; sourceTree = "<group>"; };
+		8BDE7614186A4A210069A285 /* RKChromeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChromeView.h; path = ../../RoundaboutKitMac/RKChromeView.h; sourceTree = "<group>"; };
+		8BDE7615186A4A210069A285 /* RKChromeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChromeView.m; path = ../../RoundaboutKitMac/RKChromeView.m; sourceTree = "<group>"; };
+		8BDE7616186A4A210069A285 /* RKKeyDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKKeyDispatcher.h; path = ../../RoundaboutKitMac/RKKeyDispatcher.h; sourceTree = "<group>"; };
+		8BDE7617186A4A210069A285 /* RKKeyDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKKeyDispatcher.m; path = ../../RoundaboutKitMac/RKKeyDispatcher.m; sourceTree = "<group>"; };
+		8BDE7618186A4A210069A285 /* RKMacPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMacPrelude.h; path = ../../RoundaboutKitMac/RKMacPrelude.h; sourceTree = "<group>"; };
+		8BDE763E186A4AF70069A285 /* ShadowedTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadowedTextFieldCell.h; path = ../../ShadowedTextFieldCell.h; sourceTree = "<group>"; };
+		8BDE763F186A4AF70069A285 /* ShadowedTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShadowedTextFieldCell.m; path = ../../ShadowedTextFieldCell.m; sourceTree = "<group>"; };
+		8BDE7641186A4AFF0069A285 /* EtchedTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EtchedTextFieldCell.h; path = ../../EtchedTextFieldCell.h; sourceTree = "<group>"; };
+		8BDE7642186A4AFF0069A285 /* EtchedTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EtchedTextFieldCell.m; path = ../../EtchedTextFieldCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BBE6EFD1466E6B20037D91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDE75FA186A49590069A285 /* RoundaboutKitMac.framework in Frameworks */,
+				8BC91C45175412160035AD4E /* SystemConfiguration.framework in Frameworks */,
+				8B6B25E61698DC2500EDAA8B /* Security.framework in Frameworks */,
+				8B6B25D11698DA6D00EDAA8B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BBE6EF51466E6B20037D91E = {
+			isa = PBXGroup;
+			children = (
+				8BBE6F0A1466E6B20037D91E /* PlayKeys */,
+				8BBE6F031466E6B20037D91E /* Frameworks */,
+				8BBE6F011466E6B20037D91E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BBE6F011466E6B20037D91E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE6F001466E6B20037D91E /* PlayKeys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BBE6F031466E6B20037D91E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */,
+				8BC91C44175412160035AD4E /* SystemConfiguration.framework */,
+				8B6B25E51698DC2500EDAA8B /* Security.framework */,
+				8B6B25D01698DA6D00EDAA8B /* Cocoa.framework */,
+				8BBE6F061466E6B20037D91E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BBE6F061466E6B20037D91E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE6F071466E6B20037D91E /* AppKit.framework */,
+				8BBE6F081466E6B20037D91E /* CoreData.framework */,
+				8BBE6F091466E6B20037D91E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8BBE6F0A1466E6B20037D91E /* PlayKeys */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE6FE0147C07BA0037D91E /* Sources */,
+				8BBE6F0B1466E6B20037D91E /* Other Sources */,
+				8BBE6FDF147C07980037D91E /* Resources */,
+			);
+			path = PlayKeys;
+			sourceTree = "<group>";
+		};
+		8BBE6F0B1466E6B20037D91E /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE6F101466E6B20037D91E /* main.m */,
+				8BBE6F121466E6B20037D91E /* PlayKeys-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8BBE6FDF147C07980037D91E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BC91C7A1754271A0035AD4E /* ShuffleMode@2x.png */,
+				8BC91C7B1754271A0035AD4E /* ShuffleMode.png */,
+				8BC91C7C1754271A0035AD4E /* PlayMode.png */,
+				8BC91C7D1754271A0035AD4E /* PlayMode@2x.png */,
+				8BC91C6717541DD10035AD4E /* MavenProBold.otf */,
+				8BC91C6817541DD10035AD4E /* MavenProMedium.otf */,
+				8BC91C6917541DD10035AD4E /* MavenProRegular.otf */,
+				8BBE6F191466E6B30037D91E /* MainMenu.xib */,
+				8BBE6FDC147C07760037D91E /* Icon.icns */,
+				8BBE6F0C1466E6B20037D91E /* PlayKeys-Info.plist */,
+				8BBE6F0D1466E6B20037D91E /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8BBE6FE0147C07BA0037D91E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE7609186A4A190069A285 /* RoundaboutKitMac */,
+				8BC91C46175412BA0035AD4E /* Self-Installation */,
+				8BC91C5E175419300035AD4E /* Model */,
+				8BC91C4F175418160035AD4E /* Views */,
+				8BC91C47175412CE0035AD4E /* Controllers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8BC91C46175412BA0035AD4E /* Self-Installation */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B25DB1698DBD000EDAA8B /* NSString+SymlinksAndAliases.h */,
+				8B6B25DC1698DBD000EDAA8B /* NSString+SymlinksAndAliases.m */,
+				8B6B25DD1698DBD000EDAA8B /* PFMoveApplication.h */,
+				8B6B25DE1698DBD000EDAA8B /* PFMoveApplication.m */,
+			);
+			name = "Self-Installation";
+			sourceTree = "<group>";
+		};
+		8BC91C47175412CE0035AD4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE6F161466E6B20037D91E /* AppDelegate.h */,
+				8BBE6F171466E6B20037D91E /* AppDelegate.m */,
+				8BBE6F211466E6EA0037D91E /* MediaKeyEventTap.h */,
+				8BBE6F221466E6EA0037D91E /* MediaKeyEventTap.m */,
+				8BC91C49175415740035AD4E /* HeadsUpWindowController.h */,
+				8BC91C4A175415740035AD4E /* HeadsUpWindowController.m */,
+				8BDCD056176A3391005C2F0E /* HeadsUpWindowController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8BC91C4F175418160035AD4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BDCD058176A33FC005C2F0E /* BackgroundArtworkDisplayView.h */,
+				8BDCD059176A33FC005C2F0E /* BackgroundArtworkDisplayView.m */,
+				8BDE7641186A4AFF0069A285 /* EtchedTextFieldCell.h */,
+				8BDE7642186A4AFF0069A285 /* EtchedTextFieldCell.m */,
+				8BDE763E186A4AF70069A285 /* ShadowedTextFieldCell.h */,
+				8BDE763F186A4AF70069A285 /* ShadowedTextFieldCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8BC91C5E175419300035AD4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BC91C5F175419440035AD4E /* Pinna.h */,
+				8BC91C60175419440035AD4E /* Pinna.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8BDE75ED186A494C0069A285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE75F3186A494C0069A285 /* libRoundaboutKit.a */,
+				8BDE75F5186A494C0069A285 /* RoundaboutKitMac.framework */,
+				8BDE75F7186A494C0069A285 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BDE7609186A4A190069A285 /* RoundaboutKitMac */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE760A186A4A210069A285 /* NSBezierPath+MCAdditions.h */,
+				8BDE760B186A4A210069A285 /* NSBezierPath+MCAdditions.m */,
+				8BDE7612186A4A210069A285 /* RKBorderlessWindow.h */,
+				8BDE7613186A4A210069A285 /* RKBorderlessWindow.m */,
+				8BDE7614186A4A210069A285 /* RKChromeView.h */,
+				8BDE7615186A4A210069A285 /* RKChromeView.m */,
+				8BDE7616186A4A210069A285 /* RKKeyDispatcher.h */,
+				8BDE7617186A4A210069A285 /* RKKeyDispatcher.m */,
+				8BDE7618186A4A210069A285 /* RKMacPrelude.h */,
+			);
+			name = RoundaboutKitMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BBE6EFF1466E6B20037D91E /* PlayKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBE6F1E1466E6B30037D91E /* Build configuration list for PBXNativeTarget "PlayKeys" */;
+			buildPhases = (
+				8BBE6EFC1466E6B20037D91E /* Sources */,
+				8BBE6EFD1466E6B20037D91E /* Frameworks */,
+				8BBE6EFE1466E6B20037D91E /* Resources */,
+				8BC91C6D17541DEE0035AD4E /* Copy Fonts */,
+				8BDE75FB186A49600069A285 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BDE75F9186A49530069A285 /* PBXTargetDependency */,
+			);
+			name = PlayKeys;
+			productName = PlayKeys;
+			productReference = 8BBE6F001466E6B20037D91E /* PlayKeys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BBE6EF71466E6B20037D91E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					8BBE6EFF1466E6B20037D91E = {
+						DevelopmentTeam = 2U3NNWT32M;
+					};
+				};
+			};
+			buildConfigurationList = 8BBE6EFA1466E6B20037D91E /* Build configuration list for PBXProject "PlayKeys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BBE6EF51466E6B20037D91E;
+			productRefGroup = 8BBE6F011466E6B20037D91E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8BDE75ED186A494C0069A285 /* Products */;
+					ProjectRef = 8BDE75EC186A494C0069A285 /* RoundaboutKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8BBE6EFF1466E6B20037D91E /* PlayKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8BDE75F3186A494C0069A285 /* libRoundaboutKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRoundaboutKit.a;
+			remoteRef = 8BDE75F2186A494C0069A285 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BDE75F5186A494C0069A285 /* RoundaboutKitMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RoundaboutKitMac.framework;
+			remoteRef = 8BDE75F4186A494C0069A285 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BDE75F7186A494C0069A285 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = 8BDE75F6186A494C0069A285 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BBE6EFE1466E6B20037D91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE6F0F1466E6B20037D91E /* InfoPlist.strings in Resources */,
+				8BBE6F1B1466E6B30037D91E /* MainMenu.xib in Resources */,
+				8BDCD057176A3391005C2F0E /* HeadsUpWindowController.xib in Resources */,
+				8BBE6FDD147C07760037D91E /* Icon.icns in Resources */,
+				8BC91C7E1754271A0035AD4E /* ShuffleMode@2x.png in Resources */,
+				8BC91C7F1754271A0035AD4E /* ShuffleMode.png in Resources */,
+				8BC91C801754271A0035AD4E /* PlayMode.png in Resources */,
+				8BC91C811754271A0035AD4E /* PlayMode@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BBE6EFC1466E6B20037D91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE6F111466E6B20037D91E /* main.m in Sources */,
+				8BBE6F181466E6B20037D91E /* AppDelegate.m in Sources */,
+				8BDE7643186A4AFF0069A285 /* EtchedTextFieldCell.m in Sources */,
+				8BBE6F231466E6EA0037D91E /* MediaKeyEventTap.m in Sources */,
+				8B6B25DF1698DBD000EDAA8B /* NSString+SymlinksAndAliases.m in Sources */,
+				8BDE762F186A4A210069A285 /* RKBorderlessWindow.m in Sources */,
+				8B6B25E01698DBD000EDAA8B /* PFMoveApplication.m in Sources */,
+				8BDE7640186A4AF70069A285 /* ShadowedTextFieldCell.m in Sources */,
+				8BDCD05A176A33FC005C2F0E /* BackgroundArtworkDisplayView.m in Sources */,
+				8BC91C4C175415750035AD4E /* HeadsUpWindowController.m in Sources */,
+				8BC91C61175419440035AD4E /* Pinna.m in Sources */,
+				8BDE7631186A4A210069A285 /* RKKeyDispatcher.m in Sources */,
+				8BDE762B186A4A210069A285 /* NSBezierPath+MCAdditions.m in Sources */,
+				8BDE7630186A4A210069A285 /* RKChromeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BDE75F9186A49530069A285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RoundaboutKitMac;
+			targetProxy = 8BDE75F8186A49530069A285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BBE6F0D1466E6B20037D91E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBE6F0E1466E6B20037D91E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BBE6F191466E6B30037D91E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBE6F1A1466E6B30037D91E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BBE6F1C1466E6B30037D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BBE6F1D1466E6B30037D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BBE6F1F1466E6B30037D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayKeys/PlayKeys-Prefix.pch";
+				INFOPLIST_FILE = "PlayKeys/PlayKeys-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				"OTHER_CFLAGS[arch=*]" = "-DDEBUG=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BBE6F201466E6B30037D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayKeys/PlayKeys-Prefix.pch";
+				INFOPLIST_FILE = "PlayKeys/PlayKeys-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BBE6EFA1466E6B20037D91E /* Build configuration list for PBXProject "PlayKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBE6F1C1466E6B30037D91E /* Debug */,
+				8BBE6F1D1466E6B30037D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBE6F1E1466E6B30037D91E /* Build configuration list for PBXNativeTarget "PlayKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBE6F1F1466E6B30037D91E /* Debug */,
+				8BBE6F201466E6B30037D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BBE6EF71466E6B20037D91E /* Project object */;
+}

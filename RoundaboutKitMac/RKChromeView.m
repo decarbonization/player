@@ -9,6 +9,7 @@
 #import "RKChromeView.h"
 #import "RKMacPrelude.h"
 #import "RKBorderlessWindow.h"
+#import "NSBezierPath+MCAdditions.h"
 
 static NSGradient *_ImageReflectionShadowGradient = nil;
 

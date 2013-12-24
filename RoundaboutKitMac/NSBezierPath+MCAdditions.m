@@ -122,7 +122,7 @@ static void CGPathCallback(void *info, const CGPathElement *element)
 	CGMutablePathRef thePath = CGPathCreateMutable();
 	if (!thePath) return nil;
 	
-	unsigned int elementCount = [self elementCount];
+	NSInteger elementCount = [self elementCount];
 	
 	// The maximum number of points is 3 for a NSCurveToBezierPathElement.
 	// (controlPoint1, controlPoint2, and endPoint)

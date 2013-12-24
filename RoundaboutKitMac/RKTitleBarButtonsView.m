@@ -7,7 +7,6 @@
 //
 
 #import "RKTitleBarButtonsView.h"
-#import "NSObject+AssociatedValues.h"
 
 enum {
 	kWindowButtonWidth = 14,

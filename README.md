@@ -8,6 +8,11 @@ Dependencies
 
 Player's only external dependency is [RoundaboutKit](https://github.com/decarbonization/RoundaboutKit). The appropriate version is embedded in the project.
 
+PlayKeys
+========
+
+An unreleased experiemental verison of the PlayKeys companion app is included in this repository. It adds a heads-up display activated by pressing and holding the play/pause key. It is compatible with releases of Pinna, and the Player source code is compatible with previous releases of PlayKeys.
+
 License
 =======
 

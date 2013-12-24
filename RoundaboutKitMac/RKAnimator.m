@@ -7,7 +7,6 @@
 //
 
 #import "RKAnimator.h"
-#import "NSObject+AssociatedValues.h"
 
 @implementation RKAnimatorTransaction {
 	NSMutableArray *_animations;
